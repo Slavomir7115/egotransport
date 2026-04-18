@@ -28,7 +28,7 @@ const Services = () => {
     <section className="py-20 bg-section">
       <Container className="flex flex-col gap-15">
         <div className="flex flex-col items-center gap-3">
-          <h2 className="text-4xl underline decoration-primary underline-offset-8 uppercase">
+          <h2 className="text-3xl underline decoration-primary underline-offset-8 uppercase">
             Naše služby
           </h2>
           <p className="text-lg lg:w-1/2 text-center">

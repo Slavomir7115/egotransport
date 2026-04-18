@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ego Transport Website
 
-## Getting Started
+This is the official website for Ego Transport, a modern and responsive web application built with Next.js. The website is designed to showcase the services, benefits, and contact information for Ego Transport.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Responsive Design**: Optimized for all devices, including desktops, tablets, and mobile phones.
+- **Dynamic Navigation**: Includes a mobile-friendly menu with smooth animations.
+- **Modern UI**: Built with reusable components for scalability and maintainability.
+- **Contact Form**: Allows users to easily get in touch with Ego Transport.
+- **Hosting**: Deployed on Vercel for fast and reliable performance.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Hosting
 
-## Learn More
+The website is hosted on [Vercel](https://vercel.com/), which provides seamless integration with Next.js for deployment and performance optimization.
 
-To learn more about Next.js, take a look at the following resources:
+### Deployment Steps
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Push your code to the main branch of the GitHub repository.
+2. Connect the repository to Vercel.
+3. Vercel will automatically build and deploy the project.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Domain Setup
 
-## Deploy on Vercel
+The domain for this website is managed by [WebSupport](https://www.websupport.sk/). Follow these steps to connect the domain to Vercel:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Log in to your WebSupport account.
+2. Navigate to the DNS settings for your domain.
+3. Add the following DNS records:
+   - **CNAME**: Point the `www` subdomain to `cname.vercel-dns.com`.
+   - **A Records**: Point the root domain (`@`) to the IP addresses provided by Vercel.
+4. Verify the domain in the Vercel dashboard.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Local Development
+
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/egotransport.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd egotransport
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+
+## Project Structure
+
+- **`app/`**: Contains the main application files, including layout and pages.
+- **`components/`**: Reusable UI components such as Header, HeroBanner, and ContactForm.
+- **`constants/`**: Stores constants like navigation links.
+- **`public/`**: Static assets such as images.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

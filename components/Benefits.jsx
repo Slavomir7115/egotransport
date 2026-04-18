@@ -34,7 +34,7 @@ const Benefits = () => {
     <section className="py-20">
       <Container className="flex flex-col gap-15">
         <div className="flex flex-col gap-3">
-          <h2 className="text-4xl lg:w-1/2 uppercase ">
+          <h2 className="text-3xl lg:w-1/2 uppercase ">
             Logistika, ktorá definuje <mark>spoľahlivosť</mark>
           </h2>
           <p className="text-lg lg:w-1/2">

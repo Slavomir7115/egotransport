@@ -19,7 +19,7 @@ const Gallery = () => {
     <section className="py-20">
       <Container className="flex flex-col gap-15">
         <div className="flex flex-col items-center text-center gap-3">
-          <h2 className="text-4xl uppercase">
+          <h2 className="text-3xl uppercase">
             Galéria našich <mark>sťahovaní</mark>
           </h2>
           <p className="text-lg">

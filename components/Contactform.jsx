@@ -10,7 +10,7 @@ const Contactform = () => {
       <Container className="flex flex-col lg:flex-row items-center justify-center gap-15  ">
         <div className="flex flex-col gap-15">
           <div className="flex flex-col gap-3">
-            <h2 className="text-4xl  uppercase text-cards ">
+            <h2 className="text-3xl  uppercase text-cards ">
               Kontaktujte <mark>nás</mark>
             </h2>
             <p className="text-lg lg:w-3/4">
