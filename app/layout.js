@@ -17,6 +17,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="sk" className={`${inter.variable}  h-full antialiased`}>
+      <head>
+        <script
+          id="cookieyes"
+          type="text/javascript"
+          src="https://cdn-cookieyes.com/client_data/d338d37d320fcd50442f8afd16a7bd43/script.js"
+        ></script>
+      </head>
       <body className="min-h-full flex flex-col">
         <Header />
         {children}
