@@ -19,7 +19,7 @@ const HeroBanner = () => {
       <Container className="relative z-20 flex gap-20 flex-col md:flex-row items-center justify-center h-full ">
         <div className="flex flex-col gap-3 items-start justify-center flex-basis-1/2">
           <h1 className="text-4xl md:text-5xl lg:text-7xl leading-tight uppercase">
-            Stahovanie bez <mark>starostí</mark>
+            Sťahovanie bez <mark>starostí</mark>
           </h1>
           <p className="text-lg">
             Naša spoločnosť ponúka profesionálne služby stahovania, ktoré sú
