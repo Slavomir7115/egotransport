@@ -35,6 +35,7 @@ const Gallery = () => {
               className="relative w-full h-[300px] overflow-hidden rounded-lg shadow-sm"
             >
               <Image
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 src={item.image}
                 alt={item.alt}
                 fill

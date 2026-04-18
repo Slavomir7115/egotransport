@@ -1,10 +1,12 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/UI/Header";
+import Footer from "@/components/UI/Footer";
 
 const inter = Inter({
   variable: "--font-inter-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata = {
@@ -18,6 +20,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
