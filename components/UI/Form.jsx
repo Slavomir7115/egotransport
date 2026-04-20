@@ -10,12 +10,24 @@ const Form = () => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
+      body: new URLSearchParams({
+        "form-name": "kontaktny-formular",
+        ...Object.fromEntries(formData),
+      }).toString(),
     })
-      .then(() => {
-        window.location.href = "/dakujeme";
+      .then((res) => {
+        console.log("status:", res.status);
+        if (res.ok) {
+          window.location.href = "/dakujeme";
+        } else {
+          alert("Netlify to odmietlo");
+        }
       })
-      .catch((error) => alert("chyba pri odosielaní formulára: " + error));
+
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("chyba pri odosielaní formulára");
+      });
   };
 
   return (
