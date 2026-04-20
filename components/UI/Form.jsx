@@ -2,14 +2,29 @@
 import PrimaryButton from "@/components/UI/PrimaryButton";
 import { Calendar } from "lucide-react";
 
+const handleSubmit = (e) => {
+  e.preventDefault();
+  const myForm = e.target;
+  const formData = new FormData(myForm);
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => {
+      window.location.href = "/dakujeme";
+    })
+    .catch((error) => alert("chyba pri odosielaní formulára: " + error));
+};
+
 const Form = () => {
   return (
     <form
       name="kontakt-formular"
       method="POST"
+      onSubmit={handleSubmit}
       data-netlify-honeypot="bot-field"
       data-netlify="true"
-      action="/dakujeme"
       className="bg-cards border border-border p-6 rounded-lg shadow-md w-full mx-auto"
     >
       {/* hidden input for netlify */}
