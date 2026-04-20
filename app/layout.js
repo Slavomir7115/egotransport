@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
           id="cookieyes"
           type="text/javascript"
           src="https://cdn-cookieyes.com/client_data/d338d37d320fcd50442f8afd16a7bd43/script.js"
+          strategy="afterInteractive"
         ></script>
       </head>
       <body className="min-h-full flex flex-col">

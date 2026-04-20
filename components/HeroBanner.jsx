@@ -9,6 +9,7 @@ const HeroBanner = () => {
     <section className="relative min-h-screen flex items-center justify-center py-20">
       <div className="absolute inset-0 bg-linear-to-b md:bg-linear-to-r from-cards via-cards/80 to-transparent z-10"></div>
       <Image
+        priority
         src="/images/herobanner.jpg"
         alt="Hero Banner"
         fill

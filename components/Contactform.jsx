@@ -7,7 +7,10 @@ import Form from "@/components/UI/Form";
 const Contactform = () => {
   return (
     <section className="py-20 bg-foreground text-cards ">
-      <Container className="flex flex-col lg:flex-row items-center justify-center gap-15  ">
+      <Container
+        id="kontakt"
+        className="flex flex-col lg:flex-row items-center justify-center gap-15  "
+      >
         <div className="flex flex-col gap-15">
           <div className="flex flex-col gap-3">
             <h2 className="text-3xl  uppercase text-cards ">
@@ -33,7 +36,7 @@ const Contactform = () => {
               <p className="font-semibold">info@egotransport.sk</p>
             </Link>
             <Link
-              href="tel:+421918123456"
+              href="tel:+421907721944"
               className="flex items-center gap-2   text-lg"
             >
               <Phone
@@ -47,7 +50,7 @@ const Contactform = () => {
                 size={40}
                 className="text-foreground bg-primary p-2  rounded-lg"
               />{" "}
-              <p className="font-semibold">Na Hrebene 1, 811 05 Bratislava</p>
+              <p className="font-semibold">02001 Púchov, Moravská 1634/19</p>
             </span>
           </div>
         </div>

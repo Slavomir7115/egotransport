@@ -39,3 +39,7 @@ h6 {
   font-weight: bold;
   font-family: var(--font-sans);
 }
+
+html {
+  scroll-behavior: smooth;
+}

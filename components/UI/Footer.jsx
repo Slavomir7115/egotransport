@@ -39,7 +39,7 @@ const Footer = () => {
           <ul>
             <li>
               <Link
-                href="/ochrana-osobnych-danych"
+                href="/ochrana-osobnych-udajov"
                 className="hover:text-primary transition-colors duration-300 text-lg"
               >
                 Ochrana osobných údajov

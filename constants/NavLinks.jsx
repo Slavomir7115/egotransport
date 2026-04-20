@@ -4,19 +4,26 @@ export const NAV_LINKS = [
     href: "/",
     label: "Domov",
   },
+
   {
     id: 2,
-    href: "#o-nas",
-    label: "O nás",
-  },
-  {
-    id: 3,
     href: "#sluzby",
     label: "Naše služby",
   },
+
   {
-    id: 4,
+    id: 3,
     href: "#recenzie",
     label: "Recenzie",
+  },
+  {
+    id: 4,
+    href: "#galeria",
+    label: "Galéria",
+  },
+  {
+    id: 5,
+    href: "#kontakt",
+    label: "Kontaktujte nás",
   },
 ];

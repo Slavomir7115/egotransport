@@ -33,7 +33,7 @@ const reviewsData = [
 const Reviews = () => {
   return (
     <section className="py-20 overflow-hidden">
-      <Container className="flex flex-col gap-15">
+      <Container id="recenzie" className="flex flex-col gap-15">
         <div className="flex flex-col gap-3">
           <h2 className="text-3xl lg:w-1/2 uppercase ">
             Povedali o <mark>nás</mark>
