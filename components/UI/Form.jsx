@@ -6,7 +6,7 @@ const Form = () => {
     <form
       name="kontakt-formular"
       method="POST"
-      honeypot="bot-field"
+      data-netlify-honeypot="bot-field"
       action="/dakujeme"
       className="bg-cards border border-border p-6 rounded-lg shadow-md w-full mx-auto"
     >
