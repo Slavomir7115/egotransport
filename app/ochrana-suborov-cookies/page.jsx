@@ -6,9 +6,11 @@ const metadata = {
 
 const page = () => {
   return (
-    <div className="container">
-      <h1>Ochrana osobných údajov</h1>
-    </div>
+    <main>
+      <div className="container">
+        <h1>Ochrana osobných údajov</h1>
+      </div>
+    </main>
   );
 };
 

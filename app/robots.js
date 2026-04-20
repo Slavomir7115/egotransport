@@ -3,7 +3,7 @@ export default function robots() {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: "/private/",
+      disallow: ["/private/", "/dakujeme"],
     },
     sitemap: "https://www.egotransport.sk/sitemap.xml",
   };
