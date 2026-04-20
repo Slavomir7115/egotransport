@@ -2,22 +2,22 @@
 import PrimaryButton from "@/components/UI/PrimaryButton";
 import { Calendar } from "lucide-react";
 
-const handleSubmit = (e) => {
-  e.preventDefault();
-  const myForm = e.target;
-  const formData = new FormData(myForm);
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => {
-      window.location.href = "/dakujeme";
-    })
-    .catch((error) => alert("chyba pri odosielaní formulára: " + error));
-};
-
 const Form = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const myForm = e.target;
+    const formData = new FormData(myForm);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => {
+        window.location.href = "/dakujeme";
+      })
+      .catch((error) => alert("chyba pri odosielaní formulára: " + error));
+  };
+
   return (
     <form
       name="kontaktny-formular"
