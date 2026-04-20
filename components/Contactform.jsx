@@ -54,6 +54,7 @@ const Contactform = () => {
             </span>
           </div>
         </div>
+        <Form />
       </Container>
     </section>
   );
