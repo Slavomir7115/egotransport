@@ -20,7 +20,7 @@ const handleSubmit = (e) => {
 const Form = () => {
   return (
     <form
-      name="kontakt-formular"
+      name="kontaktny-formular"
       method="POST"
       onSubmit={handleSubmit}
       data-netlify-honeypot="bot-field"
@@ -28,7 +28,7 @@ const Form = () => {
       className="bg-cards border border-border p-6 rounded-lg shadow-md w-full mx-auto"
     >
       {/* hidden input for netlify */}
-      <input type="hidden" name="form-name" value="kontakt-formular" />
+      <input type="hidden" name="form-name" value="kontaktny-formular" />
       {/* honeypot field */}
       <p className="hidden">
         <label>
