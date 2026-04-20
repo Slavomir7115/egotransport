@@ -1,3 +1,4 @@
+"use client";
 import PrimaryButton from "@/components/UI/PrimaryButton";
 import { Calendar } from "lucide-react";
 
