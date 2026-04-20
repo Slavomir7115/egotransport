@@ -7,6 +7,7 @@ const Form = () => {
       name="kontakt-formular"
       method="POST"
       data-netlify-honeypot="bot-field"
+      data-netlify="true"
       action="/dakujeme"
       className="bg-cards border border-border p-6 rounded-lg shadow-md w-full mx-auto"
     >
