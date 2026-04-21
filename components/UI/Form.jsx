@@ -46,55 +46,133 @@ const Form = () => {
         <h2 className="text-2xl font-bold text-foreground">Kontaktujte nás</h2>
       </span>
 
-      <div className="mb-4">
-        <label
-          htmlFor="name"
-          className="block text-sm font-medium text-foreground mb-1"
-        >
-          Meno
-        </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          required
-          className="w-full p-2 border border-border rounded focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
-          placeholder="Vaše meno"
-        />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div>
+          <label
+            htmlFor="name"
+            className="block text-sm font-medium text-foreground mb-1 required"
+          >
+            Meno
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            className="w-full p-2 border border-border rounded focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
+            placeholder="Vaše meno"
+          />
+        </div>
+
+        <div>
+          <label
+            htmlFor="email"
+            className="block text-sm font-medium text-foreground mb-1 required"
+          >
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            className="w-full p-2 border border-border rounded focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
+            placeholder="Váš email"
+          />
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div>
+          <label
+            htmlFor="phone"
+            className="block text-sm font-medium text-foreground mb-1 required"
+          >
+            Telefónne číslo
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            className="w-full p-2 border border-border rounded focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
+            placeholder="Zadajte telefónne číslo"
+          />
+        </div>
+
+        <div>
+          <label
+            htmlFor="moveType"
+            className="block text-sm font-medium text-foreground mb-1 required"
+          >
+            Typ nehnuteľnosti
+          </label>
+          <select
+            id="moveType"
+            name="moveType"
+            required
+            className="w-full p-2 border border-border rounded focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
+          >
+            <option value="">Vyberte možnosť</option>
+            <option value="familyHouse">Rodinný dom</option>
+            <option value="apartment">Panelák</option>
+            <option value="company">Firma</option>
+          </select>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div>
+          <label
+            htmlFor="fromLocation"
+            className="block text-sm font-medium text-foreground mb-1 required"
+          >
+            Odkiaľ sa sťahujete
+          </label>
+          <input
+            type="text"
+            id="fromLocation"
+            name="fromLocation"
+            required
+            className="w-full p-2 border border-border rounded focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
+            placeholder="Zadajte miesto"
+          />
+        </div>
+
+        <div>
+          <label
+            htmlFor="toLocation"
+            className="block text-sm font-medium text-foreground mb-1 required"
+          >
+            Kam sa sťahujete
+          </label>
+          <input
+            type="text"
+            id="toLocation"
+            name="toLocation"
+            required
+            className="w-full p-2 border border-border rounded focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
+            placeholder="Zadajte miesto"
+          />
+        </div>
       </div>
 
       <div className="mb-4">
         <label
-          htmlFor="email"
-          className="block text-sm font-medium text-foreground mb-1"
+          htmlFor="elevatorAvailability"
+          className="block text-sm font-medium text-foreground mb-1 "
         >
-          Email
+          Je v dostupnosti výťah?
         </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
+        <select
+          id="elevatorAvailability"
+          name="elevatorAvailability"
           className="w-full p-2 border border-border rounded focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
-          placeholder="Váš email"
-        />
-      </div>
-
-      <div className="mb-4">
-        <label
-          htmlFor="message"
-          className="block text-sm font-medium text-foreground mb-1"
         >
-          Správa
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          rows="4"
-          required
-          className="w-full p-2 border border-border rounded focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
-          placeholder="Vaša správa"
-        ></textarea>
+          <option value="">Vyberte možnosť</option>
+          <option value="yes">Áno</option>
+          <option value="no">Nie</option>
+        </select>
       </div>
 
       <PrimaryButton type="submit">Odoslať</PrimaryButton>

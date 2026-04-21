@@ -43,3 +43,9 @@ h6 {
 html {
   scroll-behavior: smooth;
 }
+
+.required::after {
+  content: " *";
+  color: #ef4444;
+  font-weight: bold;
+}

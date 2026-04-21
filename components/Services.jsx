@@ -1,25 +1,26 @@
 import React from "react";
 import Container from "@/components/UI/Container";
 import Image from "next/image";
+import Link from "next/link";
 
 const services = [
   {
     title: "Rezidenčné sťahovanie",
     description:
       "Sťahovanie domácností, bytov a rodinných domov s dôrazom na bezpečnosť a efektivitu.",
-    src: "/images/rezidencne.jpg",
+    src: "/images/rezidencne.webp",
   },
   {
     title: "Komerčné sťahovanie",
     description:
       "Sťahovanie kancelárií, obchodov a skladov s minimálnym narušením vašich obchodných operácií.",
-    src: "/images/komercne.jpg",
+    src: "/images/komercne.webp",
   },
   {
     title: "Medzinárodné sťahovanie",
     description:
       "Sťahovanie do zahraničia s kompletnou logistikou a colným odbavením.",
-    src: "/images/medzinarodne.jpg",
+    src: "/images/medzinarodne.webp",
   },
 ];
 
@@ -53,6 +54,12 @@ const Services = () => {
               <div className="z-20 p-8 ">
                 <h3 className="text-xl font-bold ">{service.title}</h3>
                 <p className="text-sm">{service.description}</p>
+                <Link
+                  href="#kontakt"
+                  className="mt-4 inline-flex items-center gap-2 font-bold underline decoration-primary underline-offset-4"
+                >
+                  Kontaktujte nás
+                </Link>
               </div>
             </div>
           ))}

@@ -4,7 +4,7 @@ import PrimaryButton from "../../components/UI/PrimaryButton";
 export default function page() {
   return (
     <main className="min-h-[70vh] flex items-center justify-center px-4">
-      <div className="max-w-md w-full text-center bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+      <div className="max-w-md w-full text-center bg-cards p-8 rounded-2xl shadow-sm border border-border">
         <div className="mb-6 flex justify-center">
           <div className="bg-green-100 p-3 rounded-full">
             <svg
@@ -22,16 +22,20 @@ export default function page() {
             </svg>
           </div>
         </div>
-        <h1 className="text-3xl font-bold text-gray-900 mb-4">
-          Správa odoslaná!
-        </h1>
-        <p className="text-gray-600 mb-8">
+        <h1 className="text-3xl font-bold  mb-4">Správa odoslaná!</h1>
+        <p className=" mb-8">
           Ďakujeme za váš záujem. Vašu požiadavku sme prijali a budeme vás
           kontaktovať v čo najkratšom čase.
         </p>
         <Link href="/">
           <PrimaryButton>späť na domovskú stránku</PrimaryButton>
         </Link>
+        <p className=" text-lg mt-15">
+          Ak sa ponáhľate, <b>zavolajte</b> nám na číslo:
+        </p>
+        <a href="tel:+421 907 721 944" className="inline-block mt-4">
+          <PrimaryButton>Zavolajte nám</PrimaryButton>
+        </a>
       </div>
     </main>
   );

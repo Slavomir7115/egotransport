@@ -9,9 +9,9 @@ const Contactform = () => {
     <section className="py-20 bg-foreground text-cards ">
       <Container
         id="kontakt"
-        className="flex flex-col lg:flex-row items-center justify-center gap-15  "
+        className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-5   "
       >
-        <div className="flex flex-col gap-15">
+        <div className="flex flex-col gap-5 ">
           <div className="flex flex-col gap-3">
             <h2 className="text-3xl  uppercase text-cards ">
               Kontaktujte <mark>nás</mark>
@@ -43,7 +43,7 @@ const Contactform = () => {
                 size={40}
                 className="text-foreground bg-primary p-2  rounded-lg"
               />{" "}
-              <p className="font-semibold">+421 918 123 456</p>
+              <p className="font-semibold">+421 907 721 944</p>
             </Link>
             <span className="flex items-center gap-2">
               <MapPin

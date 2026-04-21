@@ -10,7 +10,7 @@ const HeroBanner = () => {
       <div className="absolute inset-0 bg-linear-to-b md:bg-linear-to-r from-cards via-cards/80 to-transparent z-10"></div>
       <Image
         priority
-        src="/images/herobanner.jpg"
+        src="/images/herobanner.webp"
         alt="Hero Banner"
         fill
         sizes="100vw"
@@ -23,7 +23,7 @@ const HeroBanner = () => {
             Sťahovanie bez <mark>starostí</mark>
           </h1>
           <p className="text-lg">
-            Naša spoločnosť ponúka profesionálne služby stahovania, ktoré sú
+            Naša spoločnosť ponúka profesionálne služby sťahovania, ktoré sú
             rýchle, spoľahlivé a prispôsobené vašim potrebám.
           </p>
           <span className="flex flex-row items-center justify-center gap-3 mt-5">
