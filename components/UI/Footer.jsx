@@ -1,7 +1,7 @@
 import Container from "@/components/UI/Container";
 import Image from "next/image";
 import Link from "next/link";
-import { NAV_LINKS } from "@/constants/NavLinks";
+import { NAV_LINKS, FOOTER_LINKS } from "@/constants/NavLinks";
 
 const Footer = () => {
   return (
@@ -18,6 +18,21 @@ const Footer = () => {
             ></Image>
           </Link>
           <p>© 2024 Egotransport. Všetky práva vyhradené.</p>
+        </div>
+        <div>
+          <h3 className="text-xl font-bold mb-4">Sťahovanie</h3>
+          <ul>
+            {FOOTER_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="hover:text-primary transition-colors duration-300 text-lg"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
         <div>
           <h3 className="text-xl font-bold mb-4">Navigácia</h3>

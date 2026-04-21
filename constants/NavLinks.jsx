@@ -27,3 +27,31 @@ export const NAV_LINKS = [
     label: "Kontaktujte nás",
   },
 ];
+
+export const FOOTER_LINKS = [
+  {
+    id: 1,
+    href: "/stahovanie/stahovanie-bratislava",
+    label: "Sťahovanie Bratislava",
+  },
+  {
+    id: 2,
+    href: "/stahovanie/stahovanie-kosice",
+    label: "Sťahovanie Košice",
+  },
+  {
+    id: 3,
+    href: "/stahovanie/stahovanie-presov",
+    label: "Sťahovanie Prešov",
+  },
+  {
+    id: 4,
+    href: "/stahovanie/stahovanie-nitra",
+    label: "Sťahovanie Nitra",
+  },
+  {
+    id: 5,
+    href: "/stahovanie/stahovanie-zilina",
+    label: "Sťahovanie Žilina",
+  },
+];
