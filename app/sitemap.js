@@ -1,7 +1,9 @@
+import { mestaData } from "@/data/mestaData";
+
 export default function sitemap() {
   const baseUrl = "https://www.egotransport.sk";
 
-  return [
+  const staticPages = [
     {
       url: baseUrl,
       lastModified: new Date(),
@@ -21,4 +23,12 @@ export default function sitemap() {
       priority: 0.5,
     },
   ];
+  const mestoPages = mestaData.map((mesto) => ({
+    url: `${baseUrl}/stahovanie/${mesto.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...mestoPages];
 }
