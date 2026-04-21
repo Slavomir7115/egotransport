@@ -13,7 +13,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="z-999 px-5 sticky flex flex-row items-center justify-between top-5 bg-cards min-h-[80px] w-[95%] mx-auto shadow-sm border border-border rounded-lg ">
+    <header className="z-999 px-5 sticky flex flex-row items-center justify-between top-5 bg-cards/90 min-h-[80px] w-[95%] mx-auto shadow-sm border border-border rounded-lg ">
       <Link href="/">
         <Image
           alt="logo ego transport"

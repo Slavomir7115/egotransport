@@ -174,6 +174,21 @@ const Form = () => {
           <option value="no">Nie</option>
         </select>
       </div>
+      <div className="mb-4">
+        <label
+          htmlFor="message"
+          className="block text-sm font-medium text-foreground mb-1 "
+        >
+          Vaša správa
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          className="w-full p-2 border border-border rounded focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
+          placeholder="Napíšte nám viac o vašom sťahovaní, špeciálnych požiadavkách alebo otázkach."
+        />
+      </div>
 
       <PrimaryButton type="submit">Odoslať</PrimaryButton>
     </form>
