@@ -32,9 +32,13 @@ const Services = () => {
           <h2 className="text-3xl underline decoration-primary underline-offset-8 uppercase">
             Naše služby
           </h2>
-          <p className="text-lg lg:w-1/2 text-center">
+          <p className="text-lg lg:w-3/4 text-center">
             Či už ide o malý byt alebo celú firmu, náš tím profesionálov
-            zabezpečí hladký priebeh celého procesu.
+            zabezpečí hladký priebeh celého procesu. Bezpečne prenesieme aj
+            ťažké a citlivé predmety ako klavíry, akváriá či objemný nábytok –
+            bez poškodenia a stresu. Každé sťahovanie plánujeme do detailu, aby
+            prebehlo rýchlo, efektívne a bez komplikácií. Efektívne a rýchlo
+            naplánujeme logistiku pre Vaše sťahovanie.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3  gap-10 ">

@@ -23,8 +23,8 @@ const HeroBanner = () => {
             Sťahovanie bez <mark>starostí</mark>
           </h1>
           <p className="text-lg">
-            Naša spoločnosť ponúka profesionálne služby sťahovania, ktoré sú
-            rýchle, spoľahlivé a prispôsobené vašim potrebám.
+            Sťahujeme už do 24 hodín. Vyplňte formulár a získajte cenovú ponuku
+            na mieru úplne zdarma.
           </p>
           <span className="flex flex-row items-center justify-center gap-3 mt-5">
             <Users className="text-primary" size={20} />

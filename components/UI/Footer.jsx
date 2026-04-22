@@ -18,6 +18,11 @@ const Footer = () => {
             ></Image>
           </Link>
           <p>© 2024 Egotransport. Všetky práva vyhradené.</p>
+          <p>Radomír Kvasnička</p>
+          <p>02001 Púchov, Moravská 1634/19</p>
+          <p>
+            <b>IČO:</b> 46758127
+          </p>
         </div>
         <div>
           <h3 className="text-xl font-bold mb-4">Sťahovanie</h3>
