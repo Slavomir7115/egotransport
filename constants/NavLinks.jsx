@@ -12,7 +12,7 @@ export const NAV_LINKS = [
   },
   {
     id: 3,
-    href: "#cennik",
+    href: "#pricing",
     label: "Cenník",
   },
 
