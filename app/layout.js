@@ -46,6 +46,10 @@ export default function RootLayout({ children }) {
           src="https://cdn-cookieyes.com/client_data/d338d37d320fcd50442f8afd16a7bd43/script.js"
           strategy="afterInteractive"
         ></Script>
+        <meta
+          name="google-site-verification"
+          content="yDBzvEMosSezilHSXg5rDsj34VELJvH4yLRPmYZumgk"
+        />
       </head>
       <body className="min-h-full flex flex-col">
         <Header />
