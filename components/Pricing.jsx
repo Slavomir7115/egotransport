@@ -3,7 +3,7 @@ import Container from "@/components/UI/Container";
 
 const Pricing = () => {
   return (
-    <section id="cennik" className="py-20">
+    <section id="pricing" className="py-20">
       <Container className="flex flex-col gap-10">
         <div className="text-center">
           <h2 className="text-3xl uppercase">
