@@ -37,7 +37,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className="flex flex-row items-center gap-5">
-        <Link href="tel:+421 907 721 944">
+        <Link href="tel:+421 949 153 657">
           <PrimaryButton>Zavolajte nám</PrimaryButton>
         </Link>
         {isMenuOpen ? (

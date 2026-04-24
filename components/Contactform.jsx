@@ -35,15 +35,16 @@ const Contactform = () => {
               />{" "}
               <p className="font-semibold">info@egotransport.sk</p>
             </Link>
+
             <Link
-              href="tel:+421907721944"
+              href="tel:+421 949 153 657"
               className="flex items-center gap-2   text-lg"
             >
               <Phone
                 size={40}
                 className="text-foreground bg-primary p-2  rounded-lg"
               />{" "}
-              <p className="font-semibold">+421 907 721 944</p>
+              <p className="font-semibold">+421 949 153 657</p>
             </Link>
             <span className="flex items-center gap-2">
               <MapPin

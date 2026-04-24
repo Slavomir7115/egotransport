@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import PrimaryButton from "../../components/UI/PrimaryButton";
 import Script from "next/script";
@@ -43,7 +44,7 @@ export default function page() {
         <p className=" text-lg mt-15">
           Ak sa ponáhľate, <b>zavolajte</b> nám na číslo:
         </p>
-        <a href="tel:+421 907 721 944" className="inline-block mt-4">
+        <a href="tel:+421 949 153 657" className="inline-block mt-4">
           <PrimaryButton>Zavolajte nám</PrimaryButton>
         </a>
       </div>
