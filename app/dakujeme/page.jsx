@@ -1,5 +1,6 @@
 import Link from "next/link";
 import PrimaryButton from "../../components/UI/PrimaryButton";
+import Script from "next/script";
 
 export default function page() {
   return (
