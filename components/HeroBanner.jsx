@@ -2,7 +2,7 @@ import React from "react";
 import Container from "./UI/Container";
 import Image from "next/image";
 import Form from "./UI/Form";
-import { Users } from "lucide-react";
+import { Check } from "lucide-react";
 
 const HeroBanner = () => {
   return (
@@ -26,12 +26,24 @@ const HeroBanner = () => {
             Sťahujeme už do 24 hodín. Vyplňte formulár a získajte cenovú ponuku
             na mieru úplne zdarma.
           </p>
-          <span className="flex flex-row items-center justify-center gap-3 mt-5">
-            <Users className="text-primary" size={20} />
-            <p className="text-sm font-bold">
-              500+ Spokojných klientov za tento rok
-            </p>
-          </span>
+          <div className="flex flex-col gap-2 items-start justify-center mt-5">
+            <span className="flex flex-row items-center justify-center gap-3 ">
+              <Check className="text-green-400" size={20} />
+              <p className="text-sm font-bold">
+                500+ Spokojných klientov za tento rok
+              </p>
+            </span>
+            <span className="flex flex-row items-center justify-center gap-3 ">
+              <Check className="text-green-400" size={20} />
+              <p className="text-sm font-bold">
+                98% Zákaznikov by nás využilo znova
+              </p>
+            </span>
+            <span className="flex flex-row items-center justify-center gap-3 ">
+              <Check className="text-green-400" size={20} />
+              <p className="text-sm font-bold">Kalkulácia ceny do 24 hodín</p>
+            </span>
+          </div>
         </div>
         <div className="flex flex-basis-1/2  w-full h-full">
           <Form />

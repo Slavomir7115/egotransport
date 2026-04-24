@@ -4,6 +4,15 @@ import PrimaryButton from "../../components/UI/PrimaryButton";
 export default function page() {
   return (
     <main className="min-h-[70vh] flex items-center justify-center px-4">
+      <Script id="conversion-event" strategy="afterInteractive">
+        {`
+          gtag('event', 'conversion', {
+              'send_to': 'AW-18114104720/NFmaCPuWraEcEJCbvb1D',
+              'value': 1.0,
+              'currency': 'EUR'
+          });
+        `}
+      </Script>
       <div className="max-w-md w-full text-center bg-cards p-8 rounded-2xl shadow-sm border border-border">
         <div className="mb-6 flex justify-center">
           <div className="bg-green-100 p-3 rounded-full">
